@@ -4,7 +4,7 @@ import ServicelistDetail from './ServicelistDetail';
 const ServiceList = () => {
     const [servicelist, setServicelist] = useState([]);
     useEffect(()=>{
-        fetch('http://localhost:5000/orders')
+        fetch('https://tranquil-spire-26081.herokuapp.com/orders')
         .then(res=> res.json())
         .then(result=> setServicelist(result))
     }, [])

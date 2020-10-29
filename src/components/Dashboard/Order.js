@@ -13,7 +13,7 @@ const Order = () => {
         formData.append('serviceDetail', data.serviceDetail);
         formData.append('price', data.price);
         formData.append('status', data.status = 'pending');
-       fetch('http://localhost:5000/addorder', {
+       fetch('https://tranquil-spire-26081.herokuapp.com/addorder', {
             method: 'POST',
             body: formData
         })

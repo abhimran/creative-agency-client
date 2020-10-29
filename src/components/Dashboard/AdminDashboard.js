@@ -31,7 +31,7 @@ const AdminDashboard = () => {
         };
 
         useEffect(() => {
-        fetch('http://localhost:5000/admins?email=' + loggedInUser.email)
+        fetch('https://tranquil-spire-26081.herokuapp.com/admins?email=' + loggedInUser.email)
             .then(res => res.json())
             .then(data => {
                 if(data.length !== 0){

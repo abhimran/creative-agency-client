@@ -11,7 +11,7 @@ const AddService = () => {
         formData.append('file', data.file[0]);
         formData.append('serviceName', data.serviceName);
         formData.append('serviceDetail', data.serviceDetail);
-       fetch('http://localhost:5000/addservice', {
+       fetch('https://tranquil-spire-26081.herokuapp.com/addservice', {
             method: 'POST',
             body: formData
         })

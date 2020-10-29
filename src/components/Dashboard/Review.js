@@ -11,7 +11,7 @@ const Review = () => {
         formData.append('name', data.name);
         formData.append('designation', data.designation);
         formData.append('description', data.description);
-       fetch('http://localhost:5000/addreview', {
+       fetch('https://tranquil-spire-26081.herokuapp.com/addreview', {
             method: 'POST',
             body: formData
         })
